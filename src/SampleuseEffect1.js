@@ -1,6 +1,6 @@
 import React ,{useEffect, useState} from 'react';
 
-
+import "./index.css"
 const SampleuseEffect1 = () => {
   const[searchname,setsearchname]=useState("");
   const[userdata,setdata]=useState([]);
@@ -50,6 +50,21 @@ useEffect(()=>{
         }
         )}
       </ul>
+      <footer
+  style={{
+    position:'sticky',
+    bottom:0,
+    textAlign: 'center',
+    padding: '1rem',
+    backgroundColor: '#f1f1f1',
+    color: '#333',
+    fontSize: '14px',
+    borderTop: '1px solid #ccc',
+    marginTop: 'auto',
+  }}
+>
+  Copyright © {new Date().getFullYear()} by Sura Akhila | All Rights Reserved.
+</footer>
     </div>
   )
 }
